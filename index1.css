@@ -1,0 +1,416 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black; /* Adjust the thickness and color of the line */
+    width: 80%; /* Adjust the length of the line */
+    margin-bottom: 10px;
+}
+
+.vertical-line{
+    border-right: 1px solid black;
+    height: 50px;
+}
+.horizontal-lines-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: fixed;
+    width: 100%; /* Set the width to 83% of the viewport width */
+    z-index: 1000; /* Ensure the top bar stays on top of other content */
+    height: 45px;
+    padding-top: 5px;
+    margin: auto; /* Adjust margin-left to position it similarly */
+    margin-top: -10px;
+}
+
+.logo {
+    width: 200px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: -400px;
+}
+
+.main-nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: -150px;
+}
+
+.main-nav-list li {
+    padding: 0 20px;
+    margin: 5px;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+#list-arrow {
+    margin-left: -15px;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+}
+
+.header-right {
+    display: flex;
+    margin-left: 35px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+.header-right img, .header-right i {
+    padding: 10px;
+}
+
+.dil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dil img, .dil p {
+    padding-left: 2px;
+}
+
+#list-arrow-dil {
+    padding-left: 2px;
+    border: none;
+}
+
+.ad {
+    width: 100%;
+    height: 500px;
+    background-image: url(reklam.webp);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    margin: auto;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .top-menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .main-nav-list li {
+        margin: 3px;
+    }
+
+    .header-right {
+        margin-right: 10px;
+    }
+}
+
+.mid-menu-container {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: -150px 300px 0 300px;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mid-menu-container p {
+    margin: 5px;
+}
+
+.mid-menu-container-header {
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 65px;
+
+}
+
+.mid-menu-container-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.mid-menu-container-header li {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+
+.mid-menu-container-header li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+
+
+
+
+.btn-group{
+    width: 30%;
+    background-color: #EEEEEE;
+    
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    margin-left: 30px;
+   margin-bottom: 15px;
+   
+   
+}
+
+#tek-yon-button{
+    background-color: #EEEEEE;
+    color:gray;
+    margin: auto;
+    width: 175px;
+    border: none;
+   
+}
+
+#cift-yon-button {
+    background-color: lightgray;
+    color: black;
+    margin-right: 1px;
+    width: 175px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 2px;
+    height: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the right and bottom */
+}
+
+
+#bilet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: none;
+    border-left-style: none;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#white1{
+    background-color: white;
+}
+.mid-menu-container-footer {
+    margin-top: 55px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.mid-menu-container-mid {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.horizontal-line {
+    flex: 1; /* Each element takes equal space */
+    display: flex;
+    align-items: center; /* Align text vertically */
+    margin: 0; /* Remove margin */
+}
+
+#nereden, #nereye, #gidis-tarihi, #donus-tarihi, #yolcu-sayisi {
+    padding: 10px 15px;
+    padding-left: 0;
+    margin-right: 20px;
+    color: gray;
+    font-weight: bold;
+    font-size: large;
+}
+
+#gidis-date {
+    color: black;
+    font-weight: bold;
+}
+
+#gidis-tarihi {
+    color: lightgray;
+    font-size: medium;
+    margin-bottom: 0; /* Adjust margin to align with other elements */
+    padding-bottom: 0; /* Adjust padding to align with other elements */
+}
+
+#gidis-tarihi p{
+    margin-top: 30px;
+}
+
+
+#gidis-gun {
+    font-weight: lighter;
+    color: gray;
+    margin-bottom: -12px;
+}
+
+#sayi {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0; /* Adjust margin to align with other elements */
+    padding-bottom: 0; /* Adjust padding to align with other elements */
+}
+
+.mid-menu-container-mid button {
+    background: linear-gradient(90deg, #FF6600, #FFA500);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 70px;
+    margin-left: 35px;
+    width: 230px;
+}
+
+#top {
+    font-weight: bold;
+}
+
+.mid-menu-container-footer i {
+    margin-left: 15px;
+    font-size: large;
+}
+
+.sustainability {
+    display: flex;
+    width: 1200px;
+    margin: 20px 300px 0 300px;
+    padding: 0;
+    border: 1px;
+    border-radius: 10px;
+}
+
+.sustainability section {
+    background-image: url(info-banner-bg.webp);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    border-radius: 10px;
+    width: 1100px;
+}
+
+
+.sustainability img {
+    margin-left: 50px;
+
+}
+#sür-img{
+    margin-left: -45px;
+    padding-right: 10px;
+}
+
+#sus-top {
+    margin-right: 10px;
+    font-size: larger;
+    font-weight: bold; 
+    padding-right: 25px;
+}
+
+.sustainability button {
+    background: linear-gradient(135deg, #65B741, green); /* Gradient from light green to dark green */
+    color: white;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    margin-left: 100px;
+}
+
+
+.app-launch-container {
+    background: linear-gradient(90deg, #FFA500, #FF6600);
+    border: 3px dashed #FF6600;
+    border-radius: 10px;
+    margin: 20px 300px 0 300px;
+    display: flex;
+    width: 1200px;
+   
+}
+
+.app-launch-container section {
+    margin: auto;
+}
+
+.app-launch-container-text-top {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.app-launch-container-text-list {
+    list-style-image: url(dC4ygWuMueou18eEw0Km7cfe32fbd68f37af16727524aa9e384a.svg);
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px 5px 25px;
+   
+}
+
+.app-launch-container-text-list li {
+    padding: 0 5px 5px 15px;
+    justify-content: center;
+}
+
+.app-launch-container-img img {
+    margin-bottom: -5px;
+}
+
+.app-launch-container-qr p {
+    color: white;
+}
+
+#qrimg{
+    padding-right: 0px;
+}
